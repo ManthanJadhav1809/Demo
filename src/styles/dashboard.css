@@ -1,0 +1,38 @@
+/* src/styles/dashboard.css */
+.dashboard {
+    padding: 20px;
+}
+
+.property-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.property-list {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.property-item {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    background: #fffefe;
+    padding: 24px;
+    margin: 37px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* src/styles/layout.css */
+.content {
+    padding: 20px;
+}
+

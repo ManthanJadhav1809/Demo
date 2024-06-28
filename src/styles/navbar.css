@@ -1,0 +1,93 @@
+/* src/styles/navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar-links span {
+    margin-right: 15px;
+    color: #f5a623; /* Optional: Different color for user name */
+}
+
+.logout-button {
+    border-radius: 3px;
+    padding: 8px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+.logout-button:hover {
+    background-color: red;
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .navbar-links {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .navbar-links a,
+    .navbar-links span,
+    .logout-button {
+        margin: 5px 10px;
+    }
+
+    .logout-button {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand a {
+        font-size: 1.2em;
+    }
+
+    .navbar-links a,
+    .navbar-links span {
+        font-size: 0.9em;
+    }
+
+    .logout-button {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
